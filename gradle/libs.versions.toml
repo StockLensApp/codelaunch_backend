@@ -1,0 +1,96 @@
+# @formatter:off
+# noinspection UnusedProperty
+[versions]
+# Kotlin
+kotlin = "2.1.21"
+# Spring
+spring-boot = "3.5.0"
+spring-security = "6.5.0"
+spring-retry = "2.0.12"
+
+# AWS SDK
+aws-sdk-version = "2.31.50"
+aws-sdk-kotlin = "1.4.91"
+aws-smithy-kotlin = "1.4.16"
+
+# Serialization
+kotlinx-serialization = "1.8.1"
+
+# Coroutines
+kotlinx-coroutines = "1.10.2"
+
+# Apache Commons
+apache-commons-csv = "1.13.0"
+
+# Excel
+excel = "5.4.0"
+
+# Jsoup HTML parsing
+jsoup = "1.19.1"
+
+# Jackson
+jackson = "2.19.0"
+
+# SLF4J
+slf4j = "2.0.17"
+
+# Logback
+logback = "1.5.18"
+
+[libraries]
+# Spring Boot
+spring-boot-bom = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-starter-webflux = { group = "org.springframework.boot", name = "spring-boot-starter-webflux", version.ref = "spring-boot" }
+spring-boot-starter-thymeleaf = { group = "org.springframework.boot", name = "spring-boot-starter-thymeleaf", version.ref = "spring-boot" }
+spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator", version.ref = "spring-boot" }
+spring-boot-starter-data-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "spring-boot" }
+spring-boot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security", version.ref = "spring-boot" }
+spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation", version.ref = "spring-boot" }
+spring-boot-starter-data-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis", version.ref = "spring-boot" }
+spring-security-oauth2-jose = { group = "org.springframework.security", name = "spring-security-oauth2-jose", version.ref = "spring-security" }
+spring-retry = { group = "org.springframework.retry", name = "spring-retry", version.ref = "spring-retry" }
+
+# Kotlin
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines"}
+kotlinx-coroutines-reactor = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-jdk8 = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-jdk8", version.ref = "kotlinx-coroutines" }
+
+# AWS SDK
+aws-sdk-s3 = { group = "software.amazon.awssdk", name = "s3", version.ref = "aws-sdk-version" }
+aws-sdk-auth = { group = "software.amazon.awssdk", name = "auth", version.ref = "aws-sdk-version" }
+aws-sdk-bom = { group = "software.amazon.awssdk", name = "bom", version.ref = "aws-sdk-version" }
+aws-sdk-cloudfront = { group = "software.amazon.awssdk", name = "cloudfront", version.ref = "aws-sdk-version" }
+aws-sdk-sqs = { group = "software.amazon.awssdk", name = "sqs", version.ref = "aws-sdk-version" }
+aws-sdk-cloudwatch = { group = "software.amazon.awssdk", name = "cloudwatch", version.ref = "aws-sdk-version" }
+aws-sdk-kotlin-sqs = { group = "aws.sdk.kotlin", name = "sqs", version.ref = "aws-sdk-kotlin" }
+aws-sdk-kotlin-dynamodb = { group = "aws.sdk.kotlin", name = "dynamodb", version.ref = "aws-sdk-kotlin" }
+aws-sdk-kotlin-secretsmanager = { group = "aws.sdk.kotlin", name = "secretsmanager", version.ref = "aws-sdk-kotlin" }
+aws-sdk-kotlin-bedrockruntime = { group = "aws.sdk.kotlin", name = "bedrockruntime", version.ref = "aws-sdk-kotlin" }
+aws-sdk-kotlin-ses = { group = "aws.sdk.kotlin", name = "ses", version.ref = "aws-sdk-kotlin" }
+aws-smithy-kotlin-http = { group = "aws.smithy.kotlin", name = "http-client-engine-okhttp", version.ref = "aws-smithy-kotlin" }
+aws-smithy-kotlin-http-crt = { group = "aws.smithy.kotlin", name = "http-client-engine-crt-jvm", version.ref = "aws-smithy-kotlin" }
+
+# Logging
+logback-classic = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+slf4j-api = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+
+# Other
+jackson-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version.ref = "jackson" }
+apache-commons-csv = { group = "org.apache.commons", name = "commons-csv", version.ref = "apache-commons-csv" }
+
+# Excel
+excel = { group = "org.apache.poi", name = "poi-ooxml", version.ref = "excel" }
+
+# Jsoup HTML parsing
+jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
